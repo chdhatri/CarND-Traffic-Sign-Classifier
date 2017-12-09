@@ -1,13 +1,13 @@
 # **Traffic Sign Recognition** 
 
-## Writeup
+
 
 ---
 
 **Traffic Sign Recognition Project**
 
 ### The goals / steps of this project are the following:
-* Load the data set (see below for links to the project data set)
+* Load the data set 
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -30,16 +30,15 @@
 Link to [rubric points](https://review.udacity.com/#!/rubrics/481/view) 
 
 ---
-### Writeup / README
 
-##### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
-
-Link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+Link to my [project code](https://github.com/chdhatri/CarND-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
 ##### 1. Provide a basic summary of the data set.
 In the code, the analysis was done using python, numpy and/or pandas methods rather than hardcoding results manually.
+
+List of classes are provided in the csv file [signnames](./signnames.csv)
 
 * Download dataset: [traffic-signs-data.zip](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5898cd6f_traffic-signs-data/traffic-signs-data.zip)
 * The size of training set is 34799
@@ -51,14 +50,12 @@ In the code, the analysis was done using python, numpy and/or pandas methods rat
 ##### 2. Include an exploratory visualization of the dataset.
 Preview of train images
 
-[train images](./images/train_Images.png "train images")
+![png](./images/train_Images.png "train images")
 
 Exploratory visualization of the data set was done using the histogram showing how the data was distributed. Each bar frequencies of the samples in each class/traffic sign.
 The distribution of the data doesn't seemed to be normal which can be a problem, but for this project I am not trying to solve this problem.
 
-[signnames.csv](./signnames.csv)
-
-[histogram](./images/histogram.png "histogram")
+![png](./images/histogram.png "histogram")
 
 
 ### Design and Test a Model Architecture
@@ -72,7 +69,7 @@ This will help to reduce the chance of getting stuck in local optima and reach t
 Here is an example of traffic sign images after preprocessing.
 
 
-[grey scale images](./images/grey_scale.png "grey scale")
+![png](./images/grey_scale.png "grey scale")
 
 
 
@@ -101,13 +98,14 @@ My final model consisted of the following layers:
 
 ##### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-* To train the model, I used an aws for setting of GPU instance for trainning the model. [Followed Udacity Instructions] (https://classroom.udacity.com/nanodegrees/nd013/parts/fbf77062-5703-404e-b60c-95b78b2f3f9e/modules/6df7ae49-c61c-4bb2-a23e-6527e69209ec/lessons/614d4728-0fad-4c9d-a6c3-23227aef8f66/concepts/f6fccba8-0009-4d05-9356-fae428b6efb4)
+* To train the model, I used an aws GPU instance for trainning the model.  [Followed Udacity Instructions](https://classroom.udacity.com/nanodegrees/nd013/parts/fbf77062-5703-404e-b60c-95b78b2f3f9e/modules/6df7ae49-c61c-4bb2-a23e-6527e69209ec/lessons/614d4728-0fad-4c9d-a6c3-23227aef8f66/concepts/f6fccba8-0009-4d05-9356-fae428b6efb4)
 
 * As mentioned in LeNet5 used Adam Optimizer to minimize the loss funciton.And its a good default choice for the optimzer.
 
 * For Other hyperparameters I am using mean (mu) = 0 , to center the data at origin and a constant standard deviation of 
 
 ##### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+
 Final training parameters:
 * EPOCHS = 35
 * BATCH_SIZE = 128
@@ -133,7 +131,7 @@ Training for more than 35 epochs do not increase the validation accuracy. I trai
 
 Here are five German traffic signs that I found on the web:
 
-![Stop Sign ][./test_images/14_stop.jpg] ![Yield Sign][./test_images/13_yield.jpg] ![Speed Limit][./test_images/01_speed_limit_30.jpg] 
+![png][./test_images/14_stop.jpg] ![Yield Sign][./test_images/13_yield.jpg] ![Speed Limit][./test_images/01_speed_limit_30.jpg] 
 ![No Entry][./test_images/17_no_entry.jpg] ![Slippery Road][./test_images/11_slippery.jpg]
 
 The first image might be difficult to classify because ...
