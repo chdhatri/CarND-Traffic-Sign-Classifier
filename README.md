@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # **Traffic Sign Recognition** 
 
 ## Writeup
