@@ -128,11 +128,11 @@ Training for more than 35 epochs do not increase the validation accuracy. I trai
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
-
-![png][./test_images/14_stop.jpg] ![Yield Sign][./test_images/13_yield.jpg] ![Speed Limit][./test_images/01_speed_limit_30.jpg] 
-![No Entry][./test_images/17_no_entry.jpg] ![Slippery Road][./test_images/11_slippery.jpg]
-
-The first image might be difficult to classify because ...
+![png](./test_images/14_stop.jpg "Stop Sign")
+![png](./test_images/13_yield.jpg, "Yield Sign)
+![png](./test_images/01_speed_limit_30.jpg, "Speed Limit")
+![png](./test_images/17_no_entry.jpg, "No Entry")
+![png](./test_images/38_keep_right, "Keep Right)
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -141,28 +141,10 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
+| No Entry     			| No Entry										|
 | Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| 30 km/h	      		| 30 km/h					 				|
+| Keep Right			| Keep Right      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
-
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
-
+For my test images the model predicted correctly all the signs , which gives an accuracy of 100% for these test images. But it may not be same for all conditions. If time permits I would like to  like to try with different test images and compare the results to the accuracy on multiple test set.
