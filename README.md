@@ -128,8 +128,21 @@ Training for more than 35 epochs do not increase the validation accuracy. I trai
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
+
+Yield Sign:
+![png](./test_images/13_yield.jpg)
+
 Stop Sign:
-![png](./test_images/14_stop.jpg "Stop Sign") ![png](./test_images/13_yield.jpg, "Yield Sign) ![png](./test_images/01_speed_limit_30.jpg, "Speed Limit") ![png](./test_images/17_no_entry.jpg, "No Entry") ![png](./test_images/38_keep_right, "Keep Right)
+![png](./test_images/14_stop.jpg) 
+
+Speed Limit:
+![png](./test_images/01_speed_limit_30.jpg) 
+
+No Entry:
+![png](./test_images/17_no_entry.jpg) 
+
+Keep Right:
+![png](./test_images/38_keep_right)
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
