@@ -113,15 +113,13 @@ Final training parameters:
 * OPIMIZER: AdamOptimizer (learning rate = 0.001)
 
 Final model results were:
-* validation set accuracy of **97.1%**
-* test set accuracy of **95.4%**
+* validation set accuracy of **95.9%**
+* test set accuracy of **94.6%**
 
 
 ##### 5. Approach
-Model training was baed on LeNet-5 shown in the udacity classroom. 
-I modified it to work with the input shape of 32x32x3. It was a good starting point and I get a validation accuracy of about 90%, but the test accuracy was much lower (about 81%). 
-So I modified the network and added more convolutional layer, did some preprocessing and looked which changes give better results. 
-You can see my final model architecture above. I experiment with dropout as well, but I couldn't see any improvements. 
+Model training was based on LeNet-5 shown in the udacity classroom. 
+I modified the train and validation images to work with the input shape of 32x32x1 by converting them to grey scale. 
 Training for more than 35 epochs do not increase the validation accuracy. I trained the network for 50 and more epochs, but I get a slightly decreasing accuracy. So I decided to stop training after 35 epochs.
 
 
